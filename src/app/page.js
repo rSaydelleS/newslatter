@@ -1,6 +1,7 @@
 import Image from "next/image";
 import img from "../../public/assets/illustration-desktop.svg";
 import iconList from "../../public/assets/icon-list.svg";
+import Form from "../components/Form/form"
 
 export default function Home() {
   return (
@@ -26,6 +27,9 @@ export default function Home() {
               </li>
             </ul>
           </acrticle>
+          <section>
+            <Form/>
+          </section>
         </section>
         <figure>
           <figcaption>
