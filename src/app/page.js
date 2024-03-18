@@ -7,11 +7,11 @@ export default function Home() {
   return (
     <main className="main">
         <section>
-          <article>
+          <div className="firtsText">
             <h1>Stay Updated!</h1>
-            <p>Join 60,000+ product managers receiving monthly updates on:</p>
-          </article>
-          <acrticle>
+            <p>Join 60,000+ product managers receiving monthly<br/> updates on:</p>
+          </div>
+          <div className="list">
             <ul>
               <li>
                 <Image src={iconList} alt="iconlist"/>
@@ -26,7 +26,7 @@ export default function Home() {
                 <p>And much more!</p>
               </li>
             </ul>
-          </acrticle>
+          </div>
           <section>
             <Form/>
           </section>
