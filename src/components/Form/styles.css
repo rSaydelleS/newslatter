@@ -1,3 +1,37 @@
 .form {
     font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+
+.formLabel {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    font-weight: bold;
+}
+
+.form input {
+    width: 100%;
+    border: hsl(231, 7%, 60%) solid 1px;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1rem;
+    transition-duration: 0.7s;
+}
+
+.formButton {
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+.formButton:hover {
+    opacity: 0.5;
+    transition-duration: 0.7s;
+    transform: translateX(5px);
 }

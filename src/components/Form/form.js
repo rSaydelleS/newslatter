@@ -2,6 +2,7 @@
 
 import { useForm } from "react-hook-form";
 import "./styles.css"
+import { redirect } from "next/navigation";
 
 export default function Form() {
   const { register, handleSubmit, formState:{errors}, reset } = useForm({
@@ -12,18 +13,21 @@ export default function Form() {
   });
 
   const onSubmit = (data) => {
+    console.log(data);
     
-    reset();
   }
+
   return (
     <>
       <form className="form" onSubmit={handleSubmit(onSubmit)}>
-        <label htmlFor="Email"> Email address</label>
-        {errors.Email && <label>Valid email required</label>}
+        <div className="formLabel">
+          <label> Email address</label>
+          {errors.Email && <label style={{color: 'red'}}>Valid email required</label>}
+        </div>
         <input {...register("Email", { required: true })}
         placeholder="email@company.com"
         />
-      <input type="submit" value="Subscribe to monthly newslatter"/>
+      <input className="formButton" type="submit" value="Subscribe to monthly newslatter"/>
       </form>
     </>
   );
