@@ -24,7 +24,7 @@ export default function SubmitPage() {
                     <button className="btnback">Dismiss message</button>
                 </div>
             </div>
-            <div className="modal"></div>
+            <div className="modal" ></div>
             
         </main>
     </>

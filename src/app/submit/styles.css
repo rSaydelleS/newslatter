@@ -48,3 +48,17 @@
     color: hsl(0, 0%, 100%);
     border-radius: 15px;
 }
+
+@media screen and (max-width: 800px){
+    body {
+        .content {
+            gap: 3rem;
+            padding: 2rem 2rem;
+            margin: 1rem;
+            background-color: hsl(0, 0%, 100%);
+            border-radius: 20px;
+            z-index: 1000;
+        }
+        
+    }
+}
