@@ -1,7 +1,7 @@
 import Image from "next/image";
 import img from "../../public/assets/illustration-desktop.svg";
 import iconList from "../../public/assets/icon-list.svg";
-import Form from "../components/Form/form"
+import Form from "./Form/form"
 
 export default function Home() {
   return (
