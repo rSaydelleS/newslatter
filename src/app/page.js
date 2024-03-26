@@ -1,6 +1,7 @@
 import Image from "next/image";
 import iconList from "../../public/assets/icon-list.svg";
-import Form from "./Form/form";
+import Form from "../../components/Form/form";
+import Submit from "../../components/submit/page";
 
 export default function Home() {
   return (
@@ -35,6 +36,9 @@ export default function Home() {
       </section>
       <div>
         <div className="img"></div>
+      </div>
+      <div style={{ display: "none" }}>
+        <Submit />
       </div>
     </main>
   );

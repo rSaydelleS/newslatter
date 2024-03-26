@@ -1,5 +1,4 @@
 "use client";
-
 import { useForm } from "react-hook-form";
 import "./styles.css";
 import { redirect } from "next/navigation";

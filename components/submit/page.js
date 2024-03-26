@@ -1,12 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import IconSuccess from "../../../public/assets/icon-success.svg";
+import IconSuccess from "../../public/assets/icon-success.svg";
 import "./styles.css";
 import { useState } from "react";
 import { redirect } from "next/navigation";
 
-export default function SubmitPage(data) {
+export default function SubmitPage(props) {
   const [back, setBack] = useState(false);
 
   const toPage = () => {
